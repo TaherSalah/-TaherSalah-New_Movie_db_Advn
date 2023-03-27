@@ -29,13 +29,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
           floatingActionButton: FloatingActionButton(
             child: Text('addd'),
             onPressed: () {
-              DioHelper.getData(url: '/trending/all/week', query: {
-                'language': 'ar',
-                'api_key': '15923dabb14e5f0f8e45ad1634273db6'
-              }).then((value) {
-                var trending = value.data;
-                print(trending['results']);
-              }).catchError((error) {});
+
             },
           ),
         );
